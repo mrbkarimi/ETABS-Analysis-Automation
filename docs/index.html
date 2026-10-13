@@ -98,6 +98,12 @@
         .workflow-step h4 { margin-top: 0; color: var(--accent); }
         .stage-box { background-color: var(--surface); border: 2px solid var(--accent); padding: 1.5rem; margin: 1.5rem 0; border-radius: 0.5rem; }
         .stage-box h4 { color: var(--accent); margin-top: 0; }
+        .cta { display:flex; flex-wrap:wrap; gap:0.75rem; margin:1.5rem 0 0; }
+        .btn { display:inline-block; padding:0.7rem 1.3rem; border-radius:0.4rem; font-weight:600; text-decoration:none; border:2px solid var(--accent); }
+        .btn-primary { background:var(--accent); color:#fff; }
+        .btn-primary:hover { background:var(--accent-dark); border-color:var(--accent-dark); }
+        .btn-secondary { color:var(--accent); background:var(--surface); }
+        .btn-secondary:hover { background:var(--bg); }
         footer { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); font-size: 0.9rem; color: var(--text-muted); text-align: center; }
         @media (max-width: 768px) {
             h1 { font-size: 2rem; }
@@ -121,12 +127,18 @@
                 <div class="meta-item"><strong>Status:</strong> Final Release (Clean, Corrected &amp; Enhanced)</div>
                 <div class="meta-item"><strong>Scope:</strong> Enterprise-Grade Analysis &amp; Design</div>
             </div>
+            <div class="cta">
+                <a class="btn btn-primary" href="app/">&#9654; Launch Web App</a>
+                <a class="btn btn-secondary" href="https://github.com/mrbkarimi/ETABS-Analysis-Automation/releases/latest">Download desktop app (.exe)</a>
+                <a class="btn btn-secondary" href="https://github.com/mrbkarimi/ETABS-Analysis-Automation">Source on GitHub</a>
+            </div>
         </header>
 
         <nav class="toc">
             <h3>Contents</h3>
             <ul>
                 <li><a href="#executive-summary">Executive Summary</a></li>
+                <li><a href="#web-app">Web App &amp; Connector</a></li>
                 <li><a href="#importance">Importance &amp; Purpose</a></li>
                 <li><a href="#core-capabilities">Core Capabilities</a></li>
                 <li><a href="#workflow-stages">Workflow Stages</a></li>
@@ -148,6 +160,23 @@
                 <p><strong>ETABS Analysis Automation</strong> is an enterprise-grade Python application that automates the complete structural design workflow: from model generation through optimization, reinforcement design, verification, and professional reporting. It integrates seamlessly with ETABS via COM API, providing a sophisticated graphical interface for managing complex multi-disciplinary analysis and design tasks.</p>
             </div>
             <p>This capstone project represents a comprehensive engineering automation solution that combines multiple specialized subsystems: automated modeling with intelligent geometry handling, iterative column optimization with drift/torsion checking, reinforcement design with standardization algorithms, and professional-grade reporting. The application streamlines workflows that typically consume dozens of engineer-hours per project into automated pipelines, dramatically improving consistency, accuracy, and time-to-delivery.</p>
+        </section>
+
+        <section id="web-app">
+            <h2>Web App &amp; Connector</h2>
+            <div class="highlight-box">
+                <p>ETABSauto can be run from any browser via the <a href="app/"><strong>web app</strong></a>. ETABS itself still runs on your own Windows PC: a small <strong>connector</strong> program installed next to ETABS receives jobs from the web app, executes them through the ETABS API, and sends the results back. No structural analysis is performed in the cloud, and your ETABS licence stays on your machine.</p>
+            </div>
+            <h3>Quick start</h3>
+            <ol>
+                <li>Open the <a href="app/">web app</a> and sign in.</li>
+                <li>In the <strong>Download</strong> tab, download the connector and install it on the PC where ETABS is installed.</li>
+                <li>In the <strong>Setup</strong> tab, copy your <em>workspace key</em> into <code>connector_config.json</code> on that PC.</li>
+                <li>Start the connector and wait until the status shows <strong>Connector online</strong>.</li>
+                <li>Run the workflow: Modeling &rarr; Analysis &amp; Design &rarr; Optimization Engine &rarr; Reinforcement Detailing &rarr; PMM Verification &rarr; Reports.</li>
+            </ol>
+            <p><strong>Security:</strong> anyone who has your workspace key can run jobs on your PC's ETABS and see the results. Keep it private, and never post it in issues, screenshots or commits.</p>
+            <p>The standalone desktop application (<code>.exe</code>) is still available from <a href="https://github.com/mrbkarimi/ETABS-Analysis-Automation/releases/latest">Releases</a> for offline use.</p>
         </section>
 
         <section id="importance">
