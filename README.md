@@ -1,4 +1,4 @@
-# ETABS-Analysis-Automation (StructAuto)
+# ETABS-Automation (StructAuto)
 
 ETABS automation: intelligent modeling, optimization, and design verification of reinforced-concrete buildings.
 
