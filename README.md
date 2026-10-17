@@ -1,4 +1,4 @@
-# ETABS-Analysis-Automation (ETABSauto)
+# ETABS-Analysis-Automation (StructAuto)
 
 ETABS automation: intelligent modeling, optimization, and design verification of reinforced-concrete buildings.
 
@@ -6,9 +6,9 @@ ETABS automation: intelligent modeling, optimization, and design verification of
 [![Download EXE](https://img.shields.io/badge/Download-Desktop%20App%20(.exe)-555?style=for-the-badge)](https://github.com/mrbkarimi/ETABS-Analysis-Automation/releases/latest)
 [![Documentation](https://img.shields.io/badge/Docs-Technical%20Report-059669?style=for-the-badge)](https://mrbkarimi.github.io/ETABS-Analysis-Automation/)
 
-## Run ETABSauto from the browser
+## Run StructAuto from the browser
 
-ETABSauto has a web interface for automatic modelling, loading, analysis, design and optimisation of reinforced-concrete buildings in ETABS. It also generates a full report.
+StructAuto has a web interface for automatic modelling, loading, analysis, design and optimisation of reinforced-concrete buildings in ETABS. It also generates a full report.
 
 **How it works**
 
